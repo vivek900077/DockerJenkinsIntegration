@@ -50,7 +50,7 @@ steps{
 sh '''
 
     docker build -t app/tomcat .
-docker run -d -p 8081:8081 --name app-container app/tomcat
+docker run -d -p 12345:8081 --name app-container app/tomcat
 
 '''
 }
