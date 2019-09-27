@@ -2,7 +2,7 @@ FROM tomcat:8.0-alpine
 
 MAINTAINER Hari harichowdary.java@gmail.com
 
-RUN apt-get update && apt-get -y upgrade
+
 
 WORKDIR /usr/local/tomcat
 
