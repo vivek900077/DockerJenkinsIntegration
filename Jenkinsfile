@@ -49,9 +49,8 @@ stage('Deploy'){
 steps{
 sh '''
 
-    docker build -t app/tomcat .
-docker run -d -p 12345:8081 --name app-container app/tomcat
-
+    docker build -t mywebapp .
+    docker run -d -p 5555:8080 mywebapp
 '''
 }
 }
