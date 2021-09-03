@@ -49,8 +49,7 @@ stage('Deploy'){
 steps{
 sh '''
 
-    cd /var/run
-    chmod 777 docker.sock
+    
     docker build -t mywebapp .
     docker run -d -p 5555:8080 mywebapp
 '''
