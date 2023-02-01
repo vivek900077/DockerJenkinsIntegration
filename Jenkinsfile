@@ -50,8 +50,8 @@ steps{
 sh '''
 
     
-    docker build -t mywebapp .
-    docker run -d -p 5555:8080 mywebapp
+    docker build -t mywebapp1 .
+    docker run -d -p 5559:8080 mywebapp1
 '''
 }
 }
