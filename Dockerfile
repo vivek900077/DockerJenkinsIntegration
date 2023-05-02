@@ -1,0 +1,5 @@
+FROM tomcat:latest
+LABEL maintainer "nano"
+COPY **/*.war /usr/local/tomcat/webapps
+CMD ["catalina.sh" , "run"]
+EXPOSE 8080
